@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pizza;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use PizzaMaker;
 
 class ApiController extends Controller
 {
@@ -18,11 +18,15 @@ class ApiController extends Controller
 
     public function showIngredients(): JsonResponse
     {
-        return response()->json([]);
+        return response()->json([
+            \IngredientRepository::listAll()
+        ]);
     }
 
     public function showPizzas(): JsonResponse
     {
-        return response()->json(Pizza::with('ingredients')->get());
+        return response()->json(
+            PizzaMaker::listAll()
+        );
     }
 }
