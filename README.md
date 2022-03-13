@@ -1,11 +1,11 @@
 # iMusician pizza maker
 
 
-##The assignment task is the following:
+## The assignment task is the following:
 
 ---
 
-###Implement endpoints to order pizza with all necessary models, middlewares etc.
+### Implement endpoints to order pizza with all necessary models, middlewares etc.
 
 
 * System should have a predefined list of pizzas with ingredients

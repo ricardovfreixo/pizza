@@ -1,0 +1,34 @@
+*** facts
+
+there's a list of pizzas
+pizzas have ingredients that can be changed
+there's a base pizza with fixed ingredients
+base pizza must be present on all orders
+pizzas can have several times the same ingredient
+base pizza has a price that is the service price
+ingredients of the base pizza are counted as regular ingredients
+final price of the pizza is service price plus all ingredients
+ingredients have different prices
+
+
+
+*** structure
+
+== models
+
+	ingredients
+		id
+		name
+		price
+
+	pizzas
+		id
+		name
+		price
+
+	pizza_ingredients
+		id
+		id_pizza
+		id_ingredient
+
+
