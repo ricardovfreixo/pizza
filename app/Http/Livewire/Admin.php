@@ -46,6 +46,6 @@ class Admin extends Component
 
     public function saveNewIngredient()
     {
-        
+
     }
 }

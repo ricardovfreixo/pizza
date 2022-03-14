@@ -29,4 +29,9 @@ class ApiController extends Controller
             PizzaMaker::listAll()
         );
     }
+
+    public function validatePizza(Request $request): JsonResponse
+    {
+        return response()->json(PizzaMaker::validatePizza($request));
+    }
 }
